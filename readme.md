@@ -202,7 +202,11 @@ The Task Tracker follows a simple workflow:
 
 ## 🔗 Project URL
 
-[Python CLI Task Tracker] : https://github.com/Tazbin-Hossen/Python_CLI_Task_Tracker
+https://roadmap.sh/projects/task-tracker
+
+## 📂 GitHub Repository
+
+https://github.com/Tazbin-Hossen/Python_CLI_Task_Trackerer
 
 
 
