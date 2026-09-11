@@ -7,12 +7,12 @@ command = sys.argv[1]
 arguments = sys.argv[2:]
 
 
-# json file create
+# create json file
 if not os.path.exists("tasks.json"):
     with open("tasks.json" , 'w') as filename:
         json.dump([] , filename)
 
-#json file read
+
 with open("tasks.json" , 'r') as filename:
     task = json.load(filename)
 
@@ -38,7 +38,7 @@ if command.lower() == 'add':
 
 
 
-#creating list task
+#create list
 with open("tasks.json", 'r') as filename:
         task_list = json.load(filename)
 
@@ -52,7 +52,7 @@ if command.lower() == "list":
             if curr_task["Status"].lower() == status:
                 print("Task ", curr_task["Id"] , " : ", curr_task["Description"], "-- " ,curr_task["Status"])
 
-#creating update task
+#create task
 if command.lower() == 'update':
 
     if not arguments :
@@ -67,7 +67,7 @@ if command.lower() == 'update':
 with open("tasks.json" , 'w') as filename:
     json.dump(task_list , filename , indent=4)
 
-#deleting task
+#delete task 
 if command.lower() == 'delete':
     for sub_task in task_list:
         if sub_task["Id"] == int(arguments[0]):
