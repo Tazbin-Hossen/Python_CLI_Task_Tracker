@@ -74,7 +74,7 @@ if command.lower() == 'delete':
             task_list.remove(sub_task)
             break
 
-with open("tasks.json" , 'r') as filename:
+with open("tasks.json" , 'w') as filename:
     json.dump(task_list , filename , indent = 4)
 
 
